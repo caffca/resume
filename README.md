@@ -2,7 +2,7 @@
 
 在线简历展示仓库（GitHub Pages 托管）。
 
-**在线浏览：** 部署到 GitHub Pages 后生效（`https://<用户名>.github.io/resume/`）。
+**在线浏览：** <https://caffca.github.io/resume/>
 
 ## 求职意向
 
