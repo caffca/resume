@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>曾鑫萌 · 个人简历 — 电气运行 / 电气检修 / 设备维护</title>
+<meta name="description" content="曾鑫萌个人简历：江西电力职业技术学院发电厂及电力系统专业，求职电气运行、电气检修、设备维护等生产一线岗位。">
+<style>
+  :root{
+    --blue-deep:#16436e;
+    --blue:#1e5a9e;
+    --blue-light:#e8f0f9;
+    --blue-line:#c9dbee;
+    --ink:#22272e;
+    --ink-soft:#4a5561;
+    --gray:#8a94a0;
+    --paper:#ffffff;
+    --bg:#eef2f6;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Source Han Sans SC",sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    font-size:14px;
+    line-height:1.65;
+  }
+  .page{
+    max-width:880px;
+    margin:24px auto 48px;
+    background:var(--paper);
+    box-shadow:0 2px 18px rgba(22,67,110,.12);
+    border-radius:6px;
+    overflow:hidden;
+  }
+
+  /* ---------- 页眉 ---------- */
+  header{
+    background:linear-gradient(120deg,var(--blue-deep) 0%,var(--blue) 78%,#2f74c0 100%);
+    color:#fff;
+    padding:30px 44px 26px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:24px;
+  }
+  .head-main{flex:1;min-width:0;}
+  .name{
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:6px;
+    margin-bottom:6px;
+  }
+  .name small{
+    font-size:13px;
+    font-weight:400;
+    letter-spacing:2px;
+    margin-left:10px;
+    opacity:.85;
+    white-space:nowrap;
+  }
+  .target{
+    font-size:15px;
+    letter-spacing:1px;
+    margin-bottom:12px;
+    color:#dce9f7;
+  }
+  .target b{color:#fff;}
+  .contact{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 22px;
+    font-size:13.5px;
+    color:#eaf2fb;
+  }
+  .contact span::before{
+    content:"";
+    display:inline-block;
+    width:7px;height:7px;
+    margin-right:8px;
+    border-radius:50%;
+    background:#7fb2e5;
+    vertical-align:1px;
+  }
+  .photo{
+    width:104px;
+    height:136px;
+    object-fit:cover;
+    border-radius:4px;
+    border:3px solid rgba(255,255,255,.85);
+    box-shadow:0 4px 14px rgba(0,0,0,.25);
+    flex-shrink:0;
+  }
+
+  /* ---------- 主体 ---------- */
+  main{padding:26px 44px 34px;}
+  section{margin-bottom:22px;break-inside:avoid;}
+  section:last-child{margin-bottom:6px;}
+
+  h2{
+    position:relative;
+    font-size:16.5px;
+    color:var(--blue-deep);
+    letter-spacing:3px;
+    padding:4px 0 4px 16px;
+    margin-bottom:12px;
+    border-bottom:1.5px solid var(--blue-line);
+  }
+  h2::before{
+    content:"";
+    position:absolute;
+    left:0;top:50%;
+    transform:translateY(-50%) skewX(-12deg);
+    width:7px;height:17px;
+    background:linear-gradient(180deg,var(--blue) 0%,var(--blue-deep) 100%);
+  }
+  h2 small{
+    float:right;
+    font-size:11px;
+    font-weight:400;
+    color:var(--gray);
+    letter-spacing:1px;
+    line-height:24px;
+  }
+
+  .item{margin-bottom:14px;}
+  .item:last-child{margin-bottom:2px;}
+  .item-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .item-title{font-size:14.5px;font-weight:700;color:var(--ink);}
+  .item-title .role{
+    font-weight:400;
+    font-size:13px;
+    color:var(--blue);
+    margin-left:8px;
+  }
+  .item-date{font-size:12.5px;color:var(--gray);white-space:nowrap;}
+  .item-sub{font-size:13px;color:var(--ink-soft);margin-top:1px;}
+
+  ul.dot{list-style:none;margin-top:5px;}
+  ul.dot li{
+    position:relative;
+    padding-left:15px;
+    margin-bottom:3px;
+    color:var(--ink-soft);
+    font-size:13.5px;
+  }
+  ul.dot li::before{
+    content:"";
+    position:absolute;
+    left:2px;top:9px;
+    width:5px;height:5px;
+    background:var(--blue);
+    transform:skewX(-12deg);
+  }
+  ul.dot li b{color:var(--ink);}
+
+  /* 课程 / 技能标签 */
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:6px;}
+  .chip{
+    font-size:12.5px;
+    color:var(--blue-deep);
+    background:var(--blue-light);
+    border:1px solid var(--blue-line);
+    border-radius:3px;
+    padding:2px 10px;
+    white-space:nowrap;
+  }
+  .skill-line{
+    display:flex;
+    gap:10px;
+    font-size:13.5px;
+    margin-bottom:5px;
+  }
+  .skill-line .k{
+    flex-shrink:0;
+    width:82px;
+    color:var(--blue-deep);
+    font-weight:700;
+    letter-spacing:1px;
+  }
+  .skill-line .v{color:var(--ink-soft);}
+  .skill-line .v b{color:var(--ink);}
+
+  /* 荣誉双栏 */
+  .honor-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:5px 26px;
+  }
+  .honor-grid .h{
+    position:relative;
+    padding-left:15px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+  }
+  .honor-grid .h::before{
+    content:"";
+    position:absolute;
+    left:2px;top:9px;
+    width:5px;height:5px;
+    background:var(--blue);
+    transform:skewX(-12deg);
+  }
+  .honor-grid .h b{color:var(--ink);font-weight:700;}
+  .honor-grid .h.wide{grid-column:1 / -1;}
+
+  .note{
+    font-size:12px;
+    color:var(--gray);
+    margin-top:14px;
+    padding-top:10px;
+    border-top:1px dashed var(--blue-line);
+  }
+
+  /* 下载按钮 */
+  .dl{
+    display:inline-block;
+    margin-top:4px;
+    font-size:13px;
+    color:#fff;
+    background:var(--blue);
+    padding:6px 18px;
+    border-radius:4px;
+    text-decoration:none;
+  }
+  .dl:hover{background:var(--blue-deep);}
+
+  footer{
+    background:var(--blue-light);
+    border-top:1px solid var(--blue-line);
+    padding:12px 44px;
+    font-size:12px;
+    color:var(--gray);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:4px 16px;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:640px){
+    header{padding:22px 20px 20px;flex-direction:row;align-items:flex-start;}
+    .name{font-size:26px;letter-spacing:4px;}
+    .name small{display:block;margin:2px 0 0;letter-spacing:1px;}
+    .photo{width:78px;height:102px;}
+    main{padding:20px 20px 26px;}
+    footer{padding:10px 20px;}
+    .honor-grid{grid-template-columns:1fr;}
+    .skill-line .k{width:74px;}
+  }
+
+  /* ---------- 打印（A4） ---------- */
+  @page{size:A4;margin:11mm 10mm;}
+  @media print{
+    body{background:#fff;font-size:12px;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .page{max-width:none;margin:0;box-shadow:none;border-radius:0;}
+    header{
+      -webkit-print-color-adjust:exact;
+      print-color-adjust:exact;
+      padding:18px 26px 16px;
+    }
+    .name{font-size:26px;}
+    .photo{width:82px;height:108px;}
+    main{padding:16px 26px 8px;}
+    section{margin-bottom:14px;}
+    h2{font-size:14.5px;margin-bottom:9px;}
+    ul.dot li{font-size:12px;margin-bottom:2px;}
+    .skill-line,.honor-grid .h{font-size:12px;}
+    .chip{font-size:11.5px;}
+    .dl,.no-print{display:none !important;}
+    footer{padding:8px 26px;font-size:10.5px;}
+    .note{margin-top:10px;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="head-main">
+      <div class="name">曾鑫萌<small>2027 届毕业生 · 专科</small></div>
+      <div class="target">求职意向：<b>电气运行 / 电气检修 / 设备维护</b>（可接受长期倒班与生产一线岗位）</div>
+      <div class="contact">
+        <span>19507976071</span>
+        <span>xinmenghhh@163.com</span>
+        <span>籍贯：江西赣州</span>
+      </div>
+    </div>
+    <img class="photo" src="assets/photo.jpg" alt="曾鑫萌证件照">
+  </header>
+
+  <main>
+
+    <section>
+      <h2>教育背景<small>EDUCATION</small></h2>
+      <div class="item">
+        <div class="item-head">
+          <div class="item-title">江西电力职业技术学院<span class="role">发电厂及电力系统 · 专科（三年制）</span></div>
+          <div class="item-date">2024.09 — 2027.06</div>
+        </div>
+        <ul class="dot">
+          <li>专业排名<b>前 20%</b>；无挂科、无补考、无重修记录。</li>
+          <li>主修课程：电气运行、电力系统分析、高电压设备、电机学、电力系统继电保护、电力安全生产、热力设备。</li>
+          <li>实训：电机检修 · 高压电气试验 · 变电检修 · 维修电工技能。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>专业技能<small>SKILLS</small></h2>
+      <div class="skill-line"><span class="k">电气控制</span><span class="v">熟悉继电器控制回路与<b>强弱电隔离</b>（光耦 + 继电器驱动 220V 交流接触器）；能识读电气主接线图与二次回路图。</span></div>
+      <div class="skill-line"><span class="k">工业通信</span><span class="v"><b>RS-485</b> 总线布线规范与 <b>Modbus RTU</b> 协议；具备与变频器、智能电表联调经验。</span></div>
+      <div class="skill-line"><span class="k">嵌入式</span><span class="v"><b>STM32 / C 语言</b>；可设计多路电源板（EMI 滤波、防反接、过流 / 过压保护）。</span></div>
+      <div class="skill-line"><span class="k">仪器仪表</span><span class="v">熟练使用<b>万用表、示波器</b>进行电路测试与故障定位。</span></div>
+      <div class="skill-line"><span class="k">工具</span><span class="v">AI Agent 辅助开发与调试。</span></div>
+      <div class="chips">
+        <span class="chip">高压电工作业证（特种作业）</span>
+        <span class="chip">C1 驾驶证</span>
+        <span class="chip">无色盲色弱 · 可登高作业</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>项目经历<small>PROJECTS</small></h2>
+
+      <div class="item">
+        <div class="item-head">
+          <div class="item-title">全国大学生电子设计竞赛<span class="role">巡检车电气系统与电源设计 · 团队核心成员</span></div>
+          <div class="item-date">2026</div>
+        </div>
+        <ul class="dot">
+          <li>负责整车电气系统与电源设计，完成主控、电机、传感器及执行机构的供电规划。</li>
+          <li>针对电机启动瞬间电流冲击导致主控复位的问题，通过<b>优化上电时序、增加储能滤波</b>降低对主控的影响，提升整车运行稳定性。</li>
+          <li>参赛作品获<b>江西赛区高职高专组三等奖</b>（2026）；2025 年参赛获省赛三等奖。</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <div class="item-title">工业控制系统设计<span class="role">电气控制 / 系统调试</span></div>
+        </div>
+        <ul class="dot">
+          <li>参与系统搭建与调试：以 <b>STM32F407</b> 为主控，采用光耦隔离、继电器驱动电路，实现弱电控制 220V 交流接触器。</li>
+          <li>部署 <b>RS-485</b> 通信并移植 <b>Modbus RTU</b> 协议，完成与变频器、智能电表的数据读写与参数下发。</li>
+          <li>完成<b>约 72 小时连续运行验证</b>，系统在模拟现场环境下稳定工作。</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <div class="item-title">AI 安全运营智能体<span class="role">系统设计与核心开发</span></div>
+          <div class="item-date">2026</div>
+        </div>
+        <ul class="dot">
+          <li>搭建 Vue3 工作台 + FastAPI Agent 后端 + Mock XDR 数据服务三层架构，实现告警研判与误报剔除、运营报告生成。</li>
+          <li>设计 SuperAgent「研判 → 关联 → 处置 → 执行 → 校验 → 确认」六步自主闭环，逐动作回读结果，避免只发起不验证。</li>
+          <li>构建 ATT&amp;CK / 漏洞 / 监管政策知识库（37 条）与 BM25-RAG 检索、ReAct 工具编排，完成 AKSK HMAC-SHA256 签名对接深信服 XDR OpenAPI。</li>
+          <li>76 项自动化测试；在 Mock XDR 环境完成端到端验证，输出 Windows 便携部署包。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>荣誉奖项<small>HONORS</small></h2>
+      <div class="honor-grid">
+        <div class="h">2026 全国大学生数学建模竞赛江西赛区 · <b>高职高专组一等奖</b></div>
+        <div class="h">2026 全国大学生电子设计竞赛江西赛区 · <b>高职高专组三等奖</b></div>
+        <div class="h">2025 江西省大学生科技创新竞赛 · 数学建模赛项 · <b>高职高专组二等奖</b></div>
+        <div class="h">2025 全国大学生电子设计竞赛（省赛）· <b>高职高专组三等奖</b></div>
+        <div class="h wide">2025 江西省职业院校技能大赛 · 智能电子产品设计与开发 · <b>团体赛三等奖</b></div>
+        <div class="h wide">校级：“象新力杯”开放创新赛道一等奖、计算机知识竞赛二等奖、C 语言程序设计竞赛三等奖等；获“社团先进个人”（2 次）、“遵规守纪学生”称号。</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>科研经历<small>RESEARCH</small></h2>
+      <div class="item">
+        <div class="item-head">
+          <div class="item-title">Scientific Reports（SCI 三区）<span class="role">论文一篇 · 第三作者</span></div>
+          <div class="item-date">Accepted for publication</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>校园经历与社会实践<small>CAMPUS &amp; PRACTICE</small></h2>
+      <div class="item">
+        <div class="item-head">
+          <div class="item-title">校电子协会<span class="role">会长</span></div>
+          <div class="item-date">2025.09 — 至今</div>
+        </div>
+        <ul class="dot">
+          <li>统筹协会日常运营与成员协调，组织嵌入式、C 语言、焊接与电子设计等技术交流培训。</li>
+          <li>策划落地校级技术赛事，组织校园义务维修活动；参与广播站 UPS 电源故障排查与修复。</li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="item-head">
+          <div class="item-title">社会实践<span class="role">社区义务维修志愿服务</span></div>
+          <div class="item-date">2026.07 — 2026.08</div>
+        </div>
+        <ul class="dot">
+          <li>随队赴南昌市新建区幸福里社区开展义务维修志愿服务。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>自我评价<small>ABOUT ME</small></h2>
+      <ul class="dot">
+        <li>发电厂及电力系统专业出身，具备扎实的电气理论基础与现场实训经验，动手能力较强。</li>
+        <li>习惯从“现场设备能不能稳定运行”出发思考问题，做事细致、重视安全规范。</li>
+        <li>已做好长期倒班与一线岗位的心理准备，愿从基础工作做起，虚心学习、尽快独立承担任务。</li>
+      </ul>
+      <p class="note">本页所有信息均以证书、获奖公示等原始证明材料为准，可提供原件核验。更新于 2026 年 10 月。</p>
+    </section>
+
+    <p class="no-print"><a class="dl" href="resume/曾鑫萌个人简历.pdf" download>下载 PDF 版简历</a></p>
+
+  </main>
+
+  <footer>
+    <span>曾鑫萌 · 个人简历</span>
+    <span>19507976071 · xinmenghhh@163.com</span>
+  </footer>
+
+</div>
+</body>
+</html>
