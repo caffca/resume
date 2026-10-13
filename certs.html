@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>证书与证明材料 — 曾鑫萌</title>
+<meta name="description" content="曾鑫萌的证书与证明材料：竞赛获奖证书、赛事官方公示名单、学业成绩表、社会实践证明等，全部可提供原件核验。">
+<style>
+  :root{
+    --blue-deep:#16436e;
+    --blue:#1e5a9e;
+    --blue-light:#e8f0f9;
+    --blue-line:#c9dbee;
+    --ink:#22272e;
+    --ink-soft:#4a5561;
+    --gray:#8a94a0;
+    --paper:#ffffff;
+    --bg:#eef2f6;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Source Han Sans SC",sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    font-size:14px;
+    line-height:1.65;
+  }
+  .page{
+    max-width:1020px;
+    margin:24px auto 48px;
+    background:var(--paper);
+    box-shadow:0 2px 18px rgba(22,67,110,.12);
+    border-radius:6px;
+    overflow:hidden;
+  }
+
+  header{
+    background:linear-gradient(120deg,var(--blue-deep) 0%,var(--blue) 78%,#2f74c0 100%);
+    color:#fff;
+    padding:26px 40px 22px;
+  }
+  .back{
+    display:inline-block;
+    font-size:12.5px;
+    color:#cfe2f6;
+    text-decoration:none;
+    margin-bottom:12px;
+  }
+  .back:hover{color:#fff;}
+  .name{
+    font-size:26px;
+    font-weight:700;
+    letter-spacing:4px;
+  }
+  .name small{
+    font-size:13px;
+    font-weight:400;
+    letter-spacing:1px;
+    margin-left:12px;
+    opacity:.88;
+  }
+  .sub{
+    font-size:13px;
+    color:#dce9f7;
+    margin-top:7px;
+  }
+
+  main{padding:24px 40px 32px;}
+  section{margin-bottom:28px;}
+  section:last-child{margin-bottom:6px;}
+
+  h2{
+    position:relative;
+    font-size:16.5px;
+    color:var(--blue-deep);
+    letter-spacing:3px;
+    padding:4px 0 4px 16px;
+    margin-bottom:12px;
+    border-bottom:1.5px solid var(--blue-line);
+  }
+  h2::before{
+    content:"";
+    position:absolute;
+    left:0;top:50%;
+    transform:translateY(-50%) skewX(-12deg);
+    width:7px;height:17px;
+    background:linear-gradient(180deg,var(--blue) 0%,var(--blue-deep) 100%);
+  }
+  h2 small{
+    float:right;
+    font-size:11px;
+    font-weight:400;
+    color:var(--gray);
+    letter-spacing:1px;
+    line-height:24px;
+  }
+  .sec-note{
+    font-size:12.5px;
+    color:var(--gray);
+    margin:-4px 0 12px;
+  }
+
+  .gal{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(285px,1fr));
+    gap:16px;
+  }
+  .card{
+    border:1px solid var(--blue-line);
+    border-radius:6px;
+    overflow:hidden;
+    background:#fff;
+    display:flex;
+    flex-direction:column;
+    scroll-margin-top:16px;
+  }
+  .card.wide{grid-column:span 2;}
+  .card a.thumb{
+    display:block;
+    background:#f6f8fb;
+    border-bottom:1px solid var(--blue-line);
+    padding:8px;
+  }
+  .card a.thumb img{
+    display:block;
+    width:100%;
+    height:200px;
+    object-fit:contain;
+  }
+  .card.wide a.thumb img{height:auto;}
+  .card a.thumb:hover{background:#eef4fb;}
+  .cap{padding:10px 13px 12px;}
+  .cap b{font-size:13.5px;color:var(--ink);line-height:1.5;}
+  .cap .meta{
+    display:block;
+    font-size:12px;
+    color:var(--gray);
+    margin-top:4px;
+  }
+  .tag{
+    display:inline-block;
+    font-size:11px;
+    line-height:1;
+    padding:4px 8px 3px;
+    border-radius:3px;
+    margin-bottom:6px;
+    letter-spacing:1px;
+  }
+  .tag.list{background:#e8f0f9;color:#1e5a9e;border:1px solid #c9dbee;}
+  .tag.cert{background:#fdeeea;color:#b03a2e;border:1px solid #f2c9c2;}
+  .tag.school{background:#eef7ee;color:#2e7d32;border:1px solid #cde8cd;}
+  .tag.doc{background:#f5f0fa;color:#6a4d9e;border:1px solid #dfd3ef;}
+  .tag.prac{background:#fdf6e3;color:#9a7b1e;border:1px solid #f0e2b6;}
+
+  footer{
+    background:var(--blue-light);
+    border-top:1px solid var(--blue-line);
+    padding:14px 40px;
+    font-size:12px;
+    color:var(--gray);
+  }
+  footer p{margin-bottom:4px;}
+  footer p:last-child{margin-bottom:0;}
+
+  @media (max-width:700px){
+    .card.wide{grid-column:span 1;}
+  }
+  @media (max-width:640px){
+    header{padding:20px 18px 18px;}
+    .name{font-size:21px;letter-spacing:2px;}
+    .name small{display:block;margin:4px 0 0;letter-spacing:1px;}
+    main{padding:18px 18px 24px;}
+    .card a.thumb img{height:170px;}
+    footer{padding:12px 18px;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <a class="back" href="./">← 返回在线简历</a>
+    <div class="name">曾鑫萌<small>证书与证明材料</small></div>
+    <div class="sub">竞赛获奖 · 校级荣誉 · 学业成绩 · 社会实践——均为证书原件扫描件或赛事官方公示名单，可提供原件核验。</div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>省级及以上竞赛获奖<small>AWARDS</small></h2>
+      <p class="sec-note">名单类截图仅截取与本人相关的条目；证书原件完整展示。点击图片可查看大图。</p>
+      <div class="gal">
+
+        <div class="card wide" id="c-diansai2026">
+          <a class="thumb" href="assets/certs/diansai-2026-list.jpg" target="_blank" rel="noopener"><img src="assets/certs/diansai-2026-list.jpg" alt="2026 年电赛江西赛区获奖名单（第 168 项）"></a>
+          <div class="cap"><span class="tag list">名单公示</span>
+            <b>2026 全国大学生电子设计竞赛（江西赛区）· 高职高专组三等奖</b>
+            <span class="meta">官方获奖名单第 168 项 · 团队：张艺耀、曾鑫萌、陈问广；指导教师：康敏辉、王业萍</span>
+          </div>
+        </div>
+
+        <div class="card wide" id="c-shumo2026">
+          <a class="thumb" href="assets/certs/shumo-2026-list.jpg" target="_blank" rel="noopener"><img src="assets/certs/shumo-2026-list.jpg" alt="2026 年数模江西赛区获奖名单（第 9 项）"></a>
+          <div class="cap"><span class="tag list">名单公示</span>
+            <b>2026 全国大学生数学建模竞赛（江西赛区）· 高职高专组一等奖</b>
+            <span class="meta">官方获奖名单第 9 项 · 团队：曾鑫萌、颜世伟、张进民；指导教师：康光清、徐洁</span>
+          </div>
+        </div>
+
+        <div class="card" id="c-shumo2025">
+          <a class="thumb" href="assets/certs/shumo-2025-cert.jpg" target="_blank" rel="noopener"><img src="assets/certs/shumo-2025-cert.jpg" alt="2025 年数学建模获奖证书"></a>
+          <div class="cap"><span class="tag cert">获奖证书</span>
+            <b>2025 江西省大学生科技创新竞赛（数学建模赛项）· 高职高专组二等奖</b>
+            <span class="meta">证书编号 XHJS2025200541</span>
+          </div>
+        </div>
+
+        <div class="card" id="c-diansai2025">
+          <a class="thumb" href="assets/certs/diansai-2025-cert.jpg" target="_blank" rel="noopener"><img src="assets/certs/diansai-2025-cert.jpg" alt="2025 年电子设计竞赛获奖证书"></a>
+          <div class="cap"><span class="tag cert">获奖证书</span>
+            <b>2025 全国大学生电子设计竞赛（江西赛区）· 高职高专组三等奖</b>
+            <span class="meta">江西省大学生科技创新竞赛 · 电子设计竞赛赛项</span>
+          </div>
+        </div>
+
+        <div class="card" id="c-zhiyesai">
+          <a class="thumb" href="assets/certs/zhiyesai-2025-cert.jpg" target="_blank" rel="noopener"><img src="assets/certs/zhiyesai-2025-cert.jpg" alt="2025 年江西省职业院校技能大赛证书"></a>
+          <div class="cap"><span class="tag cert">获奖证书</span>
+            <b>2025 江西省职业院校技能大赛 · 智能电子产品设计与开发 · 团体三等奖</b>
+            <span class="meta">证书编号 26010815212643306187</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>校级荣誉<small>CAMPUS HONORS</small></h2>
+      <div class="gal">
+
+        <div class="card" id="c-xiangxinli">
+          <a class="thumb" href="assets/certs/xiaosai-03-xiangxinli.jpg" target="_blank" rel="noopener"><img src="assets/certs/xiaosai-03-xiangxinli.jpg" alt="象新力杯一等奖证书"></a>
+          <div class="cap"><span class="tag school">校级 · 一等奖</span>
+            <b>“象新力杯”开放创新赛道 · 一等奖</b>
+            <span class="meta">2026.05</span>
+          </div>
+        </div>
+
+        <div class="card" id="c-pojianerchu">
+          <a class="thumb" href="assets/certs/xiaosai-06-pojianerchu.jpg" target="_blank" rel="noopener"><img src="assets/certs/xiaosai-06-pojianerchu.jpg" alt="破简而出活动二等奖证书"></a>
+          <div class="cap"><span class="tag school">校级 · 二等奖</span>
+            <b>供用电工程学院「破“简”而出，“职”引光芒」活动 · 二等奖</b>
+            <span class="meta">2025–2026 学年</span>
+          </div>
+        </div>
+
+        <div class="card" id="c-cyuyan">
+          <a class="thumb" href="assets/certs/xiaosai-02-cyuyan.jpg" target="_blank" rel="noopener"><img src="assets/certs/xiaosai-02-cyuyan.jpg" alt="C 语言程序设计竞赛三等奖证书"></a>
+          <div class="cap"><span class="tag school">校级 · 三等奖</span>
+            <b>C 语言程序设计竞赛 · 三等奖</b>
+            <span class="meta">校团委</span>
+          </div>
+        </div>
+
+        <div class="card" id="c-zhihuiyun">
+          <a class="thumb" href="assets/certs/xiaosai-01-zhihuiyun.jpg" target="_blank" rel="noopener"><img src="assets/certs/xiaosai-01-zhihuiyun.jpg" alt="智汇云端软创未来办公软件比赛组织奖证书"></a>
+          <div class="cap"><span class="tag school">校级 · 组织奖</span>
+            <b>“智汇云端 软创未来”办公软件比赛 · 组织奖</b>
+            <span class="meta">学生工作处 · 2026.06</span>
+          </div>
+        </div>
+
+        <div class="card" id="c-xinhuacuican">
+          <a class="thumb" href="assets/certs/xiaosai-04-xinhuacuican.jpg" target="_blank" rel="noopener"><img src="assets/certs/xiaosai-04-xinhuacuican.jpg" alt="芯花璀璨比赛优秀组织奖证书"></a>
+          <div class="cap"><span class="tag school">校级 · 优秀组织奖</span>
+            <b>“芯花璀璨，巧手筑艺”比赛 · 优秀组织奖</b>
+            <span class="meta">校团委 · 2026.06</span>
+          </div>
+        </div>
+
+        <div class="card" id="c-yijifuneng">
+          <a class="thumb" href="assets/certs/xiaosai-05-yijifuneng.jpg" target="_blank" rel="noopener"><img src="assets/certs/xiaosai-05-yijifuneng.jpg" alt="以技赋能主题电工比赛优秀组织奖证书"></a>
+          <div class="cap"><span class="tag school">校级 · 优秀组织奖</span>
+            <b>“以技赋能，以赛促强”主题电工比赛 · 优秀组织奖</b>
+            <span class="meta">校团委 · 2026.05</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>学业成绩<small>ACADEMIC RECORD</small></h2>
+      <div class="gal">
+        <div class="card" id="c-transcript">
+          <a class="thumb" href="assets/certs/transcript.jpg" target="_blank" rel="noopener"><img src="assets/certs/transcript.jpg" alt="江西电力职业技术学院学生成绩表"></a>
+          <div class="cap"><span class="tag doc">学业材料</span>
+            <b>江西电力职业技术学院学生成绩表</b>
+            <span class="meta">学号等个人信息已作遮蔽处理；无挂科 / 补考 / 重修记录</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="c-practice">
+      <h2>社会实践<small>VOLUNTEER PRACTICE</small></h2>
+      <div class="gal">
+
+        <div class="card">
+          <a class="thumb" href="assets/certs/practice-repair.jpg" target="_blank" rel="noopener"><img src="assets/certs/practice-repair.jpg" alt="社区义务维修志愿服务现场"></a>
+          <div class="cap"><span class="tag prac">社会实践</span>
+            <b>社区义务维修志愿服务 · 现场</b>
+            <span class="meta">2026.07–08 · 南昌市新建区幸福里社区</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <a class="thumb" href="assets/certs/practice-group.jpg" target="_blank" rel="noopener"><img src="assets/certs/practice-group.jpg" alt="志愿服务队合影"></a>
+          <div class="cap"><span class="tag prac">社会实践</span>
+            <b>志愿服务队集体合影</b>
+            <span class="meta">2026.07–08 · 南昌市新建区幸福里社区</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <a class="thumb" href="assets/certs/practice-proof.jpg" target="_blank" rel="noopener"><img src="assets/certs/practice-proof.jpg" alt="社会实践证明"></a>
+          <div class="cap"><span class="tag prac">实践证明</span>
+            <b>社会实践证明（盖章）</b>
+            <span class="meta">可提供原件核验</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>· 本页全部材料来自证书原件扫描件及赛事官方公示名单；名单类截图仅截取与本人相关的条目，可提供原件核验。</p>
+    <p>· 本页不含身份证号、家庭住址等个人敏感信息；成绩表中学号已作遮蔽处理。</p>
+    <p>曾鑫萌 · 19507976071 · xinmenghhh@163.com ｜ 更新于 2026 年 10 月</p>
+  </footer>
+
+</div>
+</body>
+</html>

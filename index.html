@@ -219,6 +219,39 @@
     border-top:1px dashed var(--blue-line);
   }
 
+  /* 证书缩略图条 */
+  .cert-strip{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin-top:4px;
+  }
+  .cert-strip a{
+    display:block;
+    border:1px solid var(--blue-line);
+    border-radius:4px;
+    background:#f4f7fa;
+    padding:5px;
+    text-decoration:none;
+  }
+  .cert-strip a:hover{border-color:var(--blue);}
+  .cert-strip img{
+    display:block;
+    width:100%;
+    height:108px;
+    object-fit:contain;
+  }
+  .cert-strip span{
+    display:block;
+    font-size:11px;
+    color:var(--gray);
+    text-align:center;
+    margin-top:4px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+
   /* 下载按钮 */
   .dl{
     display:inline-block;
@@ -387,6 +420,22 @@
           <div class="item-date">Accepted for publication</div>
         </div>
       </div>
+    </section>
+
+    <section class="no-print">
+      <h2>证书与证明材料<small>CERTIFICATES</small></h2>
+      <div class="cert-strip">
+        <a href="certs.html#c-shumo2025"><img src="assets/certs/shumo-2025-cert.jpg" alt="2025 数模获奖证书"><span>2025 数模 · 二等奖</span></a>
+        <a href="certs.html#c-diansai2025"><img src="assets/certs/diansai-2025-cert.jpg" alt="2025 电赛获奖证书"><span>2025 电赛 · 三等奖</span></a>
+        <a href="certs.html#c-zhiyesai"><img src="assets/certs/zhiyesai-2025-cert.jpg" alt="2025 职校赛获奖证书"><span>2025 职校赛 · 团体三等奖</span></a>
+        <a href="certs.html#c-xiangxinli"><img src="assets/certs/xiaosai-03-xiangxinli.jpg" alt="象新力杯一等奖证书"><span>象新力杯 · 一等奖</span></a>
+        <a href="certs.html#c-pojianerchu"><img src="assets/certs/xiaosai-06-pojianerchu.jpg" alt="破简而出活动二等奖证书"><span>破简而出 · 二等奖</span></a>
+        <a href="certs.html#c-transcript"><img src="assets/certs/transcript.jpg" alt="学生成绩表"><span>学业成绩表（学号已遮蔽）</span></a>
+        <a href="certs.html#c-practice"><img src="assets/certs/practice-repair.jpg" alt="社区义务维修"><span>社区义务维修</span></a>
+        <a href="certs.html#c-practice"><img src="assets/certs/practice-group.jpg" alt="社会实践合影"><span>志愿服务 · 合影</span></a>
+      </div>
+      <p class="note" style="margin-top:10px;">以上为部分材料缩略图；全部证书（含 2026 数模 / 电赛获奖公示名单、校赛证书、成绩表等）均可在证书页查看大图，可提供原件核验。</p>
+      <p style="margin-top:8px;"><a class="dl" href="certs.html">查看全部证书与证明材料 →</a></p>
     </section>
 
     <section>
